@@ -10,14 +10,15 @@ categoriesListElements.forEach(cat => {
 
 // ЗАДАЧА 2
 const ingredients = [
-    'Картопля',
-    'Гриби',
-    'Часник',
-    'Помідори',
-    'Зелень',
-    'Приправи',
+    "Картопля",
+    "Гриби",
+    "Часник",
+    "Помідори",
+    "Зелень",
+    "Приправи",
 ];
-const ingredientsListEl = document.querySelector('#ingredients')
+
+const ingredientsListElements = document.querySelector('#ingredients')
 ingredients.forEach(ingr => {
     const ingredientElements = document.createElement('li')
     ingredientElements.textContent = ingr
@@ -54,7 +55,7 @@ images.forEach(imgSettings => {
 
     imgElements.classList.add('img-style')
 
-    galleryItemEl.append(imgEl)
+    galleryItemEl.append(imgElements)
 })
 
 galleryEl.classList.add('gallery-position')
